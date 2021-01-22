@@ -31,7 +31,8 @@ const routes=[
     {
         path: "/baidu",
         name:"baidu",
-        redirect: "https://baidu.com"
+        component:()=>import("./view/baidu/index"),
+        // redirect: "https://baidu.com"
     },
     {
         path: "/shop",

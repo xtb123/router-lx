@@ -12,16 +12,17 @@
     <router-link to="/personal">个人中心</router-link>
     <br/>
     <router-link to="/baidu">baidu</router-link>
+    <!--    <a href="https://baidu.com">百度</a>-->
   </div>
 </template>
 
 <script>
 export default {
-  props:["id"],
-  computed:{
-    routerInfo(){
-      const {fullPath,path,title,params,query,meta}=this.$route;
-      return{
+  props: ["id"],
+  computed: {
+    routerInfo() {
+      const {fullPath, path, title, params, query, meta} = this.$route;
+      return {
         fullPath,
         path,
         title,
@@ -30,7 +31,8 @@ export default {
         meta
       }
     }
-  }
+  },
+
 }
 </script>
 
